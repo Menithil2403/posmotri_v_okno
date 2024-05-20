@@ -1,6 +1,6 @@
 /* КОНФИГ */
 const preloaderWaitindTime = 1200;
-const cardsOnPage = 2;
+const cardsOnPage = 4;
 const BASE_URL = 'https://v-content.practicum-team.ru';
 const endpoint = `${BASE_URL}/api/videos?pagination[pageSize]=${cardsOnPage}&`;
 
