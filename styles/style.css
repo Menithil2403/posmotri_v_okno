@@ -15,9 +15,9 @@ html {
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1ec0b2;/*#1b1919 цвет вернуть*/
+  background-color: #1b1919;/*#1b1919 цвет вернуть*/
   display: flex;
-  /*align-items: center;*/
+  align-items: center;
   justify-content: center;
 }
 
@@ -47,10 +47,10 @@ ol {
   flex-direction: row;
   align-items: end;
   width: 1140px;
-  /*margin:0px 0px 145px 0px;*/
+  margin:0px 0px 156px 0px;
 }
 
-.button{
+.button {
   background-color: black;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -68,11 +68,10 @@ ol {
   cursor: pointer;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
   border: 3px double #fff;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -89,18 +88,13 @@ ol {
 .result {
   display: flex;
   margin: 0px 30px 0px 0px;
-  /*margin: 0px 26px 0px 0px;*/
-  /*padding: 0px 0px 0px 0px;*/
   flex-direction: column;
-  /*justify-content: end;*/
 }
 
 .result__video {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  /*margin:0px 0px 0px 0px;*/
-  /*padding: 0px 0px 0px 0px;*/
 }
 
 .result__video-container {
@@ -110,7 +104,6 @@ ol {
   width: 711px;
   height: 386px;
   margin: 0px 0px 19px 0px;  /*16 было*/
-  /*padding: 0px 0px 0px 0px;*/
 }
 
 .search-form__fieldset-title {
@@ -121,15 +114,11 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  /*margin: 0px 0px 0px 0px;*/
-  /*padding: 0px 0px 0px 0px;*/
   color: rgba(255, 255, 255, 1);
 }
 
 .search-form__fieldset {
   border-style: none;
-  /*margin:0px 0px 27px 0px;*/
-  /*padding: 0px 0px 0px 0px;*/
 }
 
 .search-form__fieldset-title {
@@ -165,22 +154,23 @@ ol {
   border-top: 3px double #fff;
 }
 
-.search-form__label:focus-within{
+.search-form__label:focus-within {
   border: 1px solid #fff;
 }
 
-.search-form__textfield::placeholder{
+.search-form__textfield::placeholder {
   color: #fff, 0.7;
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
 }
 
 .search-form__submit-button {
   width: 194px;
   height: 34px;
   align-self: end;
-  /*margin: 24px 0px 0px 0px;*/
 }
 
 .search-form__checkbox-list {
@@ -190,16 +180,11 @@ ol {
 
 .search-form__label {
   display: inline-flex;
-  border: 1px solid transparent;
-  
+  /*border: 1px solid transparent;*/
 }
 
 .search-form__checkbox-list .search-form__label:not(:first-child) {
   margin-left: 15px;
-}
-
-.search-form__label:not(:first-of-type,:last-of-type) {
-  /*margin: 0px 15px 0px 15px;*/
 }
 
 .search-form__label .search-form__pseudo-checkbox {
@@ -207,7 +192,7 @@ ol {
   
 }
 
-.search-form__label-text{
+.search-form__label-text {
   text-indent: 5px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -243,7 +228,6 @@ ol {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /*height: 100%;*/
 }
 
 .title {
@@ -252,7 +236,7 @@ ol {
   font-weight: 700;
   color: #fff;
   line-height: 94%;
-  margin-bottom: 22px;/*26px было*/
+  margin-bottom: 22px;
   text-transform: uppercase;
 }
 
@@ -261,8 +245,6 @@ ol {
 }
 
 .content__details .content__list {
-  /*height: 350px; */
-  /*width: 100%;*/
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -272,13 +254,9 @@ ol {
   position: relative;
   top: 0;
   left: 0;
-  /*padding: 0 5px;*/
 }
 
 .content__list-item {
-  /*width: 100%;*/
-  /*height: 111px;*/
-  /*margin: 22px 0 22px 0;*/
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid transparent;
@@ -291,7 +269,6 @@ ol {
 .content__list-item:last-child {
   margin-bottom: 0px;
 }
-
 
 .content__list-item:focus-within {
   outline: none;
@@ -308,24 +285,19 @@ ol {
 
 .content__video-card {
   display: flex;
-  /*height: 107px;*/
   justify-content: space-between;
-  /*margin-top: 2px;*/
 }
 
 .content__video-card-description-container {
   height: 100%;
 }
 
-
-.content__video-card-thumbnail {   /*Высоиа и ширина превью картинки ВРЕМЕННО*/
+.content__video-card-thumbnail { 
   height: 103px;
   width: 194px;
 }
 
 .more-button {
-  position: fixed;
-  bottom: 0;
   width: 399px;
   height: 34px;
 }
@@ -354,13 +326,3 @@ ol {
 .content__list::-webkit-scrollbar {
   width: 0px;              
 }
-
-/*.content__list::-webkit-scrollbar-track {
-  background: transparent;    
-}
-
-.content__list::-webkit-scrollbar-thumb {
-  background-color: transparent; 
-  border-radius: 10px;       
-  border: 1px solid  #ffffff64;
-}*/
