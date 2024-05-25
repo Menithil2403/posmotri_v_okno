@@ -47,7 +47,7 @@ ol {
   flex-direction: row;
   align-items: end;
   width: 1140px;
-  margin:0px 0px 156px 0px;
+  /*margin:0px 0px 156px 0px;*/
 }
 
 .button {
