@@ -40,7 +40,7 @@ ol {
   list-style: none;
 }
 
-/*==================universal====================*/
+/*================universal==================*/
 
 .content {
   display: flex;
@@ -82,7 +82,7 @@ ol {
   white-space: nowrap;
 }
 
-/*=======================result=======================*/
+/*=====================result=====================*/
 
 .result {
   display: flex;
@@ -239,7 +239,7 @@ ol {
   border: 1px solid #fff;
 }
 
-/*=====================content__details=======================*/
+/*===================content__details=====================*/
 
 .content__details {
   display: flex;
