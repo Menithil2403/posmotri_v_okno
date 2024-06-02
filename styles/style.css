@@ -162,7 +162,9 @@ ol {
 }
 
 .search-form__label .search-form__textfield:active {
-  box-shadow: inset 0px -1px white;
+  box-shadow: 
+  inset 1px 1px white,
+  inset -1px -1px white;
 }
 
 .search-form__textfield::placeholder {
