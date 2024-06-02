@@ -136,11 +136,7 @@ ol {
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
-
-  box-shadow: 
-    inset 0px 1px #fff,
-		inset 0px 0px #fff,
-		inset 0px -1px #fff;
+  box-shadow: inset 0px 1px #fff, inset 0px 0px #fff, inset 0px -1px #fff;
 }
 
 .search-form__textfield:active {
@@ -149,24 +145,24 @@ ol {
 
 .search-form__label:focus-within .search-form__textfield {
   outline: none;
-
 }
 
 .search-form__label .search-form__textfield:focus {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   box-shadow: 
-    inset 0px 1px black,
-    inset 0px -1px black,
-    inset 0px 2px white,
-    inset 0px -2px white;
+  inset 1px 1px white, 
+  inset -1px -1px white, 
+  inset 0px 2px black, 
+  inset 0px -2px black, 
+  inset 0px 3px white, 
+  inset 0px -3px white;
 }
 
 .search-form__label .search-form__textfield:active {
-  box-shadow: 
-    inset 0px -1px #fff;
+  box-shadow: inset 0px -1px white;
 }
 
 .search-form__textfield::placeholder {
